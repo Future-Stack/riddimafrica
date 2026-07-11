@@ -15,31 +15,10 @@ export default function Home() {
     }
 
     return (
-        <main className="min-h-screen bg-[#594B66] text-brand-cream flex flex-col border border-white/10">
-      
-            <header className="flex items-start justify-between px-6 md:px-12 pt-6 sm:pt-9">
-                <div className="flex items-center gap-2">
-                 <img src="/logo.svg" alt="" />
-                </div>
-                <div className="relative flex flex-col items-center">
-                    <button className="rounded-full border border-[#C8963A59] text-[#C9963A] text-lg sm:text-xl px-4 sm:px-5 py-3 hover:bg-[#E0A458]/10 leading-6 transition-colors">
-                        Get the App
-                    </button>
-
-             <div className="swing-tag ">
-                        <div className="relative">
-                            <div
-                                className="absolute left-1/2 -translate-x-1/2  w-1.5 h-1.5 rounded-full bg-plum-bg border border-[#5F5468]"
-                                aria-hidden="true"
-                            />
-                        <CommingSoonIcon/>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
+        <main className="relative   text-brand-cream flex flex-col  ">
+     
         
-            <section className="flex-1 flex flex-col items-center justify-center px-6 text-center mb-[129px]">
+            <section className="flex-1 flex flex-col items-center justify-center px-6 text-center mb-[129px] z-10">
                 <h1
                     className="font-display font-black font-fraunces leading-[91px] text-5xl sm:text-6xl md:text-7xl lg:text-[90px] text-transparent bg-clip-text"
                     style={{
@@ -63,11 +42,11 @@ export default function Home() {
 
              
                 <div className="flex items-center gap-3 mt-10 sm:mt-12 w-full max-w-xs sm:max-w-sm">
-                    <span className="h-px flex-1 bg-[#F0EBE81A]" />
-                    <span className="text-xs  text-[#79A6A8] font-medium leading-4.5 font-inter whitespace-nowrap">
+                    <span className="h-px flex-1 bg-[#9A565B]" />
+                    <span className="text-xs  text-[#C1D6D7] font-medium leading-4.5 font-inter whitespace-nowrap">
                         Join the waitlist
                     </span>
-                    <span className="h-px flex-1 bg-[#F0EBE81A]" />
+                    <span className="h-px flex-1 bg-[#9A565B]" />
                 </div>
 
                 {/* Form */}
@@ -86,18 +65,18 @@ export default function Home() {
                             placeholder="Email address"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                                className="w-full rounded-[14px] bg-[#1E1228] border border-[#F0EBE81F] px-5 py-3.5 text-sm md:text-base font-normal leadng-6 text-[#F0EBE8B2] placeholder:text-[#F0EBE8B2] outline-none focus:border-brand-teal transition-colors"
+                                className="w-full rounded-[14px] bg-[#8C36326B] border border-[#F0EBE81F] px-5 py-3.5 text-sm md:text-base font-normal leadng-6 text-[#F0EBE8B2] placeholder:text-[#F0EBE8B2] outline-none focus:border-brand-teal transition-colors"
                         />
                         <input
                             type="tel"
-                            placeholder="Phone number (optional)"
+                            placeholder="Phone number"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                                className="w-full  rounded-[14px] bg-[#1E1228] border border-[#F0EBE81F] px-5 py-3.5 text-sm md:text-base font-normal leadng-6 text-[#F0EBE8B2] placeholder:text-[#F0EBE8B2] outline-none focus:border-brand-teal transition-colors"
+                                className="w-full  rounded-[14px] bg-[#8C36326B] border border-[#F0EBE81F] px-5 py-3.5 text-sm md:text-base font-normal leadng-6 text-[#F0EBE8B2] placeholder:text-[#F0EBE8B2] outline-none focus:border-brand-teal transition-colors"
                         />
                         <button
                             type="submit"
-                                className="w-full rounded-[14px] bg-[#387C7E]  hover:bg-brand-teal/90 transition-colors text-white font-bold text-sm md:text-base leading-5 py-3 mt-6"
+                                className="w-full rounded-[14px] bg-[#28C7CC]  hover:bg-brand-teal/90 transition-colors text-white font-bold text-sm md:text-base leading-5 py-3 mt-6"
                         >
                             Get early access
                         </button>
