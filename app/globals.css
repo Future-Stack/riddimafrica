@@ -33,27 +33,21 @@ body {
 .font-fraunces {
   font-family: "Fraunces", serif;
 }
-
 @keyframes swing {
   0% {
-    transform: rotate(-12deg);
+    transform: rotate(-10deg);
   }
-  20% {
-    transform: rotate(-8deg);
-  }
+
   50% {
-    transform: rotate(12deg);
+    transform: rotate(10deg);
   }
-  80% {
-    transform: rotate(8deg);
-  }
+
   100% {
-    transform: rotate(-12deg);
+    transform: rotate(-10deg);
   }
 }
 
 .swing-tag {
-  animation: swing 3s ease-in-out infinite;
+  animation: swing 2.5s ease-in-out infinite;
   transform-origin: top center;
-  will-change: transform;
 }
