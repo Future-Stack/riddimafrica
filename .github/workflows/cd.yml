@@ -1,4 +1,4 @@
-name: Deploy Lawal App
+name: Deploy Riddim Africa Landing Page
 
 on:
   push:
@@ -19,8 +19,8 @@ jobs:
 
       - name: Build and Push
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/lawalbackendbackendtwo:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/lawalbackendbackendtwo:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/riddimafrica-landing-page:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/riddimafrica-landing-page:latest
 
   deploy:
     runs-on: ubuntu-latest
