@@ -1,0 +1,12 @@
+services:
+  web:
+    image: sakibsakib/riddimafrica-landing-page:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: riddimafrica-web
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
