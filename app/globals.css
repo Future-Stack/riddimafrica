@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Fraunces:opsz,wght@9..144,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -20,7 +21,39 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background: var(--background); */
+  /* color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif; */
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-fraunces {
+  font-family: "Fraunces", serif;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(-12deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  80% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(-12deg);
+  }
+}
+
+.swing-tag {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
+  will-change: transform;
 }
