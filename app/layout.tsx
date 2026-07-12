@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Riddim Africa",
     images: [
       {
-        url: "/og-image.png", // resolved against metadataBase
+        url: "/og-image.png", 
         width: 1200,
         height: 630,
         alt: "Riddim Africa",
