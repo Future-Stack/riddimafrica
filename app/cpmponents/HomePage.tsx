@@ -15,7 +15,7 @@ export default function Home() {
     }
 
     return (
-        <main className="relative   text-brand-cream flex flex-col  ">
+        <main className="relative min-h-screen  text-brand-cream flex flex-col  ">
      
         
             <section className="flex-1 flex flex-col items-center justify-center px-6 text-center mb-[129px] z-10">
@@ -51,7 +51,7 @@ export default function Home() {
 
                 {/* Form */}
                 {submitted ? (
-                    <div className="mt-6 w-full max-w-xs sm:max-w-sm rounded-lg border border-brand-teal/40 bg-brand-teal/10 px-5 py-6 text-sm text-brand-cream/90">
+                    <div className="mt-6 w-full max-w-xs sm:max-w-sm rounded-lg border border-[#8C36326B] bg-brand-teal/10 px-5 py-6 text-sm text-green-100">
                         You&apos;re on the list! We&apos;ll be in touch before launch.
                     </div>
                 ) : (

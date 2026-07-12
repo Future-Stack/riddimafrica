@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CommingSoonIcon from "../svgIcon/commingSoonIcon";
 
 const NAV_LINKS = [
@@ -15,9 +15,27 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
     const [active, setActive] = useState("Home");
 
+    const menuRef = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (
+                menuRef.current &&
+                !menuRef.current.contains(event.target as Node)
+            ) {
+                setOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     return (
         <header className="mt-4 px-4 sm:px-6 lg:px-10">
-            <div className="relative mx-auto max-w-[1650px]">
+            <div ref={menuRef} className="relative mx-auto max-w-[1650px]">
                 {/* Navbar */}
                 <div className="rounded-full bg-[#DA80801A] backdrop-blur-[91px]">
                     <nav className="flex items-center justify-between px-6 md:px-12 py-5">
@@ -86,7 +104,7 @@ export default function Navbar() {
                             : "opacity-0 -translate-y-2 pointer-events-none"
                         }`}
                 >
-                    <div className="rounded-2xl bg-[#2A2033]/95 backdrop-blur-xl shadow-2xl border border-white/10 overflow-hidden">
+                    <div className="rounded-2xl bg-[#DA80801A] backdrop-blur-[91px] shadow-2xl border border-white/10 overflow-hidden">
                         <ul className="flex flex-col py-3">
                             {NAV_LINKS.map((link) => (
                                 <li key={link.label}>
