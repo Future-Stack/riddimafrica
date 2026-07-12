@@ -34,7 +34,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="mt-4 px-4 sm:px-6 lg:px-10">
+        <header className="sticky top-0 z-50 bg-transparent px-4 pt-4 sm:px-6 lg:px-10">
             <div ref={menuRef} className="relative mx-auto max-w-[1650px]">
 
                 <div className="rounded-full bg-[#DA80801A] backdrop-blur-[91px]">
