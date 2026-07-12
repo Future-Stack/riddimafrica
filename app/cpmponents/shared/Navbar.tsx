@@ -36,7 +36,7 @@ export default function Navbar() {
     return (
         <header className="mt-4 px-4 sm:px-6 lg:px-10">
             <div ref={menuRef} className="relative mx-auto max-w-[1650px]">
-                {/* Navbar */}
+
                 <div className="rounded-full bg-[#DA80801A] backdrop-blur-[91px]">
                     <nav className="flex items-center justify-between px-6 md:px-12 py-5">
                         {/* Logo */}
@@ -97,11 +97,10 @@ export default function Navbar() {
                     </nav>
                 </div>
 
-                {/* Mobile Dropdown */}
                 <div
                     className={`absolute top-full left-0 right-0 mt-3 z-50 lg:hidden transition-all duration-300 ${open
-                            ? "opacity-100 translate-y-0 pointer-events-auto"
-                            : "opacity-0 -translate-y-2 pointer-events-none"
+                        ? "opacity-100 translate-y-0 pointer-events-auto"
+                        : "opacity-0 -translate-y-2 pointer-events-none"
                         }`}
                 >
                     <div className="rounded-2xl bg-[#DA80801A] backdrop-blur-[91px] shadow-2xl border border-white/10 overflow-hidden">
@@ -115,8 +114,8 @@ export default function Navbar() {
                                             setOpen(false);
                                         }}
                                         className={`block px-6 py-4 transition-colors ${active === link.label
-                                                ? "text-[#BB483D] font-semibold"
-                                                : "text-white hover:text-[#BB483D]"
+                                            ? "text-[#BB483D] font-semibold"
+                                            : "text-white hover:text-[#BB483D]"
                                             }`}
                                     >
                                         {link.label}
