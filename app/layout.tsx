@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.riddimafrica.com/"), // REQUIRED for absolute og:image URLs
+  metadataBase: new URL("https://www.riddimafrica.com/"), 
   icons: "/logo.svg",
   title: "Riddim Africa - The Home of African Music",
   description:
-    "Africa's new home for music, merchandise and entertainment. Stream, own the culture.",
+    "Africa's home for music,merch and artists- where artists and creators getpaid instantly",
   openGraph: {
     title: "Riddim Africa - The Home of African Music",
     description:
-      "Africa's new home for music, merchandise and entertainment. Stream, own the culture.",
+      "Africa's home for music,merch and artists- where artists and creators getpaid instantly",
     url: "https://www.riddimafrica.com/",
     siteName: "Riddim Africa",
     images: [
