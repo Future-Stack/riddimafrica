@@ -100,7 +100,7 @@ export default function Home() {
 
         try {
             await fetch(
-                "https://script.google.com/macros/s/AKfycbzQQPSmvNAWunme52J37U32XNt7ppnleOniyn24l9HePrHNEjtRJ4A2_KTJtDJr25g/exec",
+                "https://script.google.com/macros/s/AKfycbxFbRSDmrSg1-0UT1sxceK6LmUKWr5jYQCvmrcbeG77_v3HSjIEP58yGiRq1g2j/exec",
                 {
                     method: "POST",
                     headers: { "Content-Type": "text/plain" },
